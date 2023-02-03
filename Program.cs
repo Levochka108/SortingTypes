@@ -1,8 +1,8 @@
 ﻿using static Sorting;
-using static System.Console;
-using static System.String;
+using static Infrastructure;
 
-int[] array = { 7, 8, 5, 4, 3, 6, 2, 1, 0 };
+int[] array = CreateArray(10);
 
+PrintArray(array);
 SortSelection(array);
-WriteLine($"[{Join(',', array)}]");
+PrintArray(array);

@@ -1,4 +1,5 @@
 using static System.Console;
+using static System.String;
 public static class Infrastructure
 {
     public static int[] CreateArray(int size, int min = 0, int max = 10)
@@ -9,7 +10,7 @@ public static class Infrastructure
     }
     public static void PrintArray(int[] array)
     {
-        WriteLine($"[{String.Join(',', array)}]");
+        WriteLine($"[{Join(',', array)}]");
 
 
     }
