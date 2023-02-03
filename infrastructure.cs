@@ -8,9 +8,13 @@ public static class Infrastructure
                                     .Select(item => Random.Shared.Next(min, max))
                                     .ToArray();
     }
-    public static int[] PrintArray(this int[] array)
+    public static int[] PrintArray(this int[] array, string separator = ",")
     {
-        WriteLine($"[{String.Join(',', array)}]");
+        string output = Join(separator, array); // using String!!!
+
+        //WriteLine($"[{Join(',', array)}]");
+        WriteLine($"[{output}]");
+
         return array;
     }
 }
